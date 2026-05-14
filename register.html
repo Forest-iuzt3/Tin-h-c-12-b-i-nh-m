@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng ký</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a href="index.html" class="back-home">
+  Quay về Trang chủ
+</a>
+
+<button onclick="toggleEasterEgg()" class="top-btn toggle-btn">
+  Ẩn hiệu ứng ✨
+</button>
+
+<!-- <button class="toggle-form-btn" onclick="toggleForm()">👁️</button> -->
+
+<div class="form-container">
+<form id="form">
+  <h1>Đăng ký CLB</h1>
+
+  <p class="cute-text">
+    Lỡ ghé rồi thì đăng kí 1 slot nha 👉👈 iuuu ✨
+  </p>
+
+  <div class="form-group">
+    <label>Họ tên</label>
+    <input id="name" placeholder="Nhập họ tên">
+  </div>
+
+  <div class="form-group">
+    <label>Lớp</label>
+    <input id="class" placeholder="12A1">
+  </div>
+
+  <div class="form-group">
+    <h2 class="form-title">Chọn câu lạc bộ</h2>
+    <p>(Có thể chọn cả hai)</p>
+    <div class="checkbox-group">
+      <label class="checkbox-card">
+        <input type="checkbox" value="photo">
+        <span>📸 Nhiếp ảnh</span>
+      </label>
+
+      <label class="checkbox-card">
+        <input type="checkbox" value="math">
+        <span>🧮 Toán học</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="submit-box">
+    <button type="submit" class="submit-btn">🚀 Đăng ký</button>
+  </div>
+
+  <p id="message"></p>
+</form>
+</div>
+
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <h2>🎉 Đăng ký thành công!</h2>
+    <p id="clubResult"></p>
+    <p>Chờ xét duyệt nha mom ✨</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

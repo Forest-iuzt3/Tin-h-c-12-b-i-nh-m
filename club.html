@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>CLB</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+
+  <a href="index.html"
+  class="back-home">
+
+    Trang chủ
+
+  </a>
+
+</nav>
+
+<!-- FANPAGE BUTTON -->
+<a
+  id="fanpage-link"
+  class="fanpage-btn"
+  target="_blank"
+>
+  Fanpage Câu Lạc Bộ (Facebook)
+</a>
+
+<!-- HERO -->
+<section class="club-hero">
+
+  <!-- LEFT -->
+  <div class="club-text">
+
+    <h1 id="club-title">
+      CLB
+    </h1>
+
+    <p id="club-desc"></p>
+
+    <div id="team-banner"></div>
+
+  </div>
+
+  <!-- RIGHT -->
+  <div class="club-side">
+
+    <img
+      id="club-logo"
+      class="club-logo"
+      src=""
+    >
+    
+    <button
+      id="club-register-btn"
+      class="register-club-btn">
+
+      Đăng ký ngay
+
+    </button>
+
+    <span class="auto-select-note">
+      (CLB này sẽ được chọn sẵn)
+    </span>
+
+  </div>
+
+</section>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <!-- MEMBERS -->
+  <section class="reveal">
+
+    <div class="member-heading">
+
+  <h2 class="section-title">
+    Ban quản lý CLB
+  </h2>
+
+  <p class="member-note">
+
+    ✨ Nhấn vào từng thành viên
+    để xem mô tả chi tiết
+
+  </p>
+
+</div>
+
+    <div
+      id="members"
+      class="members">
+
+    </div>
+
+    <div class="members-wrapper"
+id="members">
+</div>
+
+  </section>
+
+  <!-- DIVISIONS -->
+  <section class="reveal">
+
+    <h2 class="section-title">
+      Các ban hoạt động
+    </h2>
+
+    <div
+      id="division-container"
+      class="division-container">
+
+    </div>
+
+  </section>
+
+  <!-- EVENTS -->
+  <section class="reveal">
+
+    <h2 class="section-title">
+      Sự kiện nổi bật
+    </h2>
+
+    <div class="event-slider">
+
+      <button class="slider-btn prev">
+        ❮
+      </button>
+
+      <div
+        id="event-slider"
+        class="slider">
+
+      </div>
+
+      <button class="slider-btn next">
+        ❯
+      </button>
+
+    </div>
+
+    <div
+      id="slider-dots"
+      class="slider-dots">
+
+    </div>
+
+  </section>
+
+</div>
+
+<div id="popup" class="popup">
+
+  <div class="popup-box">
+
+    <span
+    class="close-popup"
+
+    onclick="closePopup()">
+      ✕
+    </span>
+
+    <img id="popup-img">
+
+    <h2 id="popup-title"></h2>
+
+    <p id="popup-role"></p>
+
+    <div id="popup-desc"></div>
+
+  </div>
+
+</div>
+
+</div>
+
+  <section class="club-cta">
+
+  <h2>
+    ✨ Muốn trở thành một phần
+    của hành trình này?
+  </h2>
+
+  <p>
+    Thì đăng kí tham gia liền đi má 💫
+  </p>
+
+  <button
+id="bottom-register-btn"
+class="cta-btn">
+
+🚀 Đăng ký ngay
+
+</button>
+
+</section>
+<!-- BUTTON -->
+<button
+onclick="toggleEasterEgg()"
+class="top-btn toggle-btn">
+
+Ẩn hiệu ứng ✨
+
+</button>
+
+<button
+onclick="scrollToTop()"
+class="top-btn fancy">
+
+Về đầu trang
+
+</button>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <h3>
+    Ôm nhiều tiền thì ấm :))
+  </h3>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

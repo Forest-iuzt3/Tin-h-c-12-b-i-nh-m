@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THPT Mạc Đĩnh Chi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="loader">Chờ xíu nhe...</div>
+
+
+
+<nav class="navbar">
+  <h2 class="logo">THPT Mạc Đĩnh Chi</h2>
+  <div>
+    <a href="#clubs">CLB</a>
+    <a href="register.html" class="btn">Đăng ký</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <h1> 1 xíu clb</h1>
+  <p>Cụ thể là 2 =)) </p>
+
+  <button onclick="goToClubs()" class="btn">
+    Khám phá ngay
+  </button>
+</header>
+
+
+
+<section id="clubs" class="clubs">
+  <div class="card reveal">
+  <img src="Pallette.png" class="card-logo">
+
+  <h3>Pallette 📸</h3>
+  <p>CLB Nhiếp Ảnh</p>
+
+  <button class="btn ripple"
+onclick="openClub('photo','📸','Pallette')">
+Xem
+</button>
+</div>
+
+  <div class="card reveal">
+    <img src="Fibo.png" class="card-logo">
+    <h3>Fibonacci 🧮</h3>
+    <p>CLB Toán học MĐC</p>
+    <button class="btn ripple"
+    onclick="openClub('math','🧮','Fibonacci')">
+      Xem
+</button>
+  </div>
+</section>
+
+<button onclick="toggleEasterEgg()" class="top-btn toggle-btn">
+  Ẩn hiệu ứng ✨
+</button>
+
+<button onclick="scrollToTop()" class="top-btn fancy">
+  Về đầu trang
+</button>
+
+<footer class="footer">
+  <p>Designed by</p>
+  <h3 id="team-name">Âm nhiều tiền thì ốm</h3>
+  <p>Lớp 12A12</p>
+</footer>
+
+<div id="clubTransition" class="club-transition">
+
+  <div class="transition-content">
+
+    <div id="transitionLogo" class="transition-logo">
+      📸
+    </div>
+
+    
+
+    <div class="loading-dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    
+
+  </div>
+
+</div>
+
+<div id="warpTransition" class="warp-transition">
+
+  <!-- galaxy particles -->
+  <div class="warp-stars"></div>
+
+  <!-- lens flare -->
+  <div class="lens-flare"></div>
+
+  <!-- logo -->
+  <div class="warp-center">
+
+    <img
+      id="warpLogo"
+      class="warp-logo"
+      src=""
+    >
+
+    <h1 id="warpTitle">
+      Club
+    </h1>
+
+    <p class="warp-sub">
+      Loading Universe...
+    </p>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
